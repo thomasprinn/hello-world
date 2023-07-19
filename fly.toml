@@ -1,0 +1,14 @@
+# fly.toml app configuration file generated for withered-wildflower-5640 on 2023-07-19T09:46:21Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "withered-wildflower-5640"
+primary_region = "nrt"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
